@@ -1,0 +1,21 @@
+/* src/components/Cursor/Cursor.css */
+
+.leaf-cursor {
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  display: none;
+  will-change: transform;
+  /* transform-origin set inline to the tip point (14px 1px) */
+}
+
+.leaf-trail-dot {
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9998;
+  border-radius: 50%;
+  background: rgba(77, 134, 155, 0.28);
+  will-change: transform;
+}

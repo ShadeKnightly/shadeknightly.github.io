@@ -1,0 +1,57 @@
+/* src/components/Skills/Skills.css */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-group {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-group:hover {
+  border-color: rgba(136, 186, 200, 0.3);
+  transform: translateY(-3px);
+}
+
+.skill-group-icon { font-size: 1.8rem; margin-bottom: 1rem; }
+
+.skill-group-name {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1rem;
+}
+
+.skill-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.skill-pill {
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(136, 186, 200, 0.15);
+  color: var(--text);
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-pill:hover {
+  background: rgba(136, 186, 200, 0.1);
+  border-color: rgba(136, 186, 200, 0.35);
+  color: var(--sky);
+}
+
+.skill-pill--highlight {
+  background: rgba(51, 96, 99, 0.3);
+  border-color: rgba(77, 134, 155, 0.35);
+  color: var(--sky);
+}

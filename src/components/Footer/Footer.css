@@ -1,0 +1,12 @@
+/* src/components/Footer/Footer.css */
+
+.footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+  color: #3d5560;
+  font-family: var(--font-mono);
+}

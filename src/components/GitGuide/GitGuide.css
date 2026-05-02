@@ -1,0 +1,120 @@
+/* src/components/GitGuide/GitGuide.css */
+
+.git-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ── Terminal ── */
+.git-terminal {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  position: sticky;
+  top: 6rem;
+}
+
+.git-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot.red    { background: #ff5f57; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green  { background: #28c840; }
+
+.git-bar-title { color: var(--muted); font-size: 0.7rem; margin-left: 0.25rem; }
+
+.git-line        { line-height: 2; }
+.git-line--comment { color: #526a72; }
+.git-line--cmd     { color: var(--sky); }
+.git-line--branch  { color: #c9a8d4; }
+.git-line--string  { color: #b5cea8; }
+.git-line--success { color: #7ec8a0; }
+
+/* ── Copy ── */
+.git-content p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.git-content p strong { color: var(--text); }
+
+/* ── Doc cards ── */
+.git-docs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.git-doc-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--teal-deep);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.1rem;
+  transition: border-left-color 0.2s ease, background 0.2s ease;
+}
+
+.git-doc-card:hover {
+  border-left-color: var(--sky);
+  background: rgba(136,186,200,0.04);
+}
+
+.git-doc-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--sky);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem !important;
+}
+
+.git-doc-desc {
+  font-size: 0.82rem !important;
+  color: var(--muted);
+  line-height: 1.6 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ── Bullets ── */
+.git-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.git-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.git-bullets li::before {
+  content: "▸";
+  color: var(--teal);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
