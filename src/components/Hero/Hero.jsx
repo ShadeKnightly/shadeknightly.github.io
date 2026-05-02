@@ -7,16 +7,16 @@ import "./Hero.css";
 export default function Hero() {
   return (
     <section id="hero" className="hero">
-      <p className="hero-eyebrow">// Software Developer · Edmonton, AB</p>
+      <p className="hero-eyebrow">// Software Developer · Calgary, AB</p>
 
       <h1 className="hero-name">
-        [YOUR<br />NAME]
+        [Heather-may<br />Howse]
       </h1>
 
       <p className="hero-title">
-        I build <span>real systems for real people</span> — from non-profit
-        platforms to polished games and web apps. New to the field, not new
-        to delivering.
+        I build <span>projects and systems for individuals and businesses</span> - from non-profit
+        platforms to polished games and web apps. New to the field, committed to user friendly experiences, 
+        and well designed projects. <span>Let's build something great together.</span>
       </p>
 
       <div className="hero-cta">
