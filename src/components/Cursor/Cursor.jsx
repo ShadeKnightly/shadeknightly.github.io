@@ -51,7 +51,7 @@ export default function Cursor() {
     }
 
   function onBlur()  { hide(); }
-  function onFocus() { visible = false; }e
+  function onFocus() { visible = false; }
 
     function tick() {
       frameId = requestAnimationFrame(tick);
