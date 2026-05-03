@@ -39,7 +39,7 @@ export const projects = [
     description:
       "Built a polished WinForms desktop application in C# featuring full game UI, and an AI opponent. Significantly exceeded project requirements by implementing a complete graphical interface with animated piece drops.",
     tags: ["C#", "WinForms", ".NET", "OOP", "AI Logic"],
-    youtubeId: null,
+    youtubeId: "C1VtxDSuhaY",
   },
   {
     id: 4,
