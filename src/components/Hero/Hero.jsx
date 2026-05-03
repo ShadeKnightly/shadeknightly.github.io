@@ -19,8 +19,8 @@ export default function Hero() {
         and well designed projects. 
       </p>
 
-      <div className="hero-subtitle">
-      <span>Let's build something great together.</span>
+      <div className="hero-title">
+      <span>Let's build something great together</span><br />
       </div>
 
       <div className="hero-cta">

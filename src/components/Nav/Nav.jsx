@@ -22,7 +22,7 @@ export default function Nav() {
           </li>
         ))}
         <li>
-          <a href="/resume.docx" download className="btn btn-outline nav-resume">
+          <a href="/Resume_2026.pdf" download className="btn btn-outline nav-resume">
             Resume ↓
           </a>
         </li>
