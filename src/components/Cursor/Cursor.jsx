@@ -50,7 +50,8 @@ export default function Cursor() {
       }
     }
 
-    function onMouseLeave() { hide(); }
+  function onBlur()  { hide(); }
+  function onFocus() { visible = false; }e
 
     function tick() {
       frameId = requestAnimationFrame(tick);
@@ -83,12 +84,14 @@ export default function Cursor() {
     }
 
     document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("mouseleave", onMouseLeave);
+    window.addEventListener("blur", onBlur);
+    window.addEventListener("focus", onFocus);
     frameId = requestAnimationFrame(tick);
 
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
-      document.removeEventListener("mouseleave", onMouseLeave);
+      window.removeEventListener("blur", onBlur);
+      window.removeEventListener("focus", onFocus);
       cancelAnimationFrame(frameId);
     };
   }, []);
