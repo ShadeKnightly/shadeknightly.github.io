@@ -14,7 +14,7 @@ const links = [
 export default function Nav() {
   return (
     <nav className="nav">
-      <a href="#hero" className="nav-logo">[YOUR NAME]</a>
+      <a href="#hero" className="nav-logo">Heather-may Howse</a>
       <ul className="nav-links">
         {links.map((l) => (
           <li key={l.href}>
